@@ -24,8 +24,8 @@ export const VideoCall = () => {
     const [appId, setAppId] = useState(""); 
     const [channel, setChannel] = useState(""); 
     const [token, setToken] = useState("");
-    const guser = useSelector(state=>state.user[0])
-    // console.log(guser.displayName)
+    // const guser = useSelector(state=>state.user[0])
+    // // console.log(guser.displayName)
 
     const handleClick =()=>{
         setAppId('ebd5c96279cd45c18d948e781a7003dd')
@@ -62,7 +62,7 @@ export const VideoCall = () => {
               {remoteUsers.map((user) => (
                 <div className="user min-w-[270px] min-h-[230px]" key={user.uid}>
                   <RemoteUser cover="https://www.agora.io/en/wp-content/uploads/2022/10/3d-spatial-audio-icon.svg" user={user}>
-                    <samp className="user-name">{guser.displayName? guser.displayName :user.uid}</samp>
+                    <samp className="user-name">{user.uid}</samp>
                   </RemoteUser>
                 </div>
               ))}
