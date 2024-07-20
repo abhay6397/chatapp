@@ -30,7 +30,7 @@ export const VideoCall = () => {
     const handleClick =()=>{
         setAppId('ebd5c96279cd45c18d948e781a7003dd')
         setChannel('chatapp')
-        setToken('007eJxTYBA5c9HllvPuqgdM7lfKF/TvnVngtIn5pJ//CZmiK8613PoKDKlJKabJlmZG5pbJKSamyYYWKZYmFqnmFoaJ5gYGxikpJ37OTGsIZGS49oKLgREKQXx2huSMxJLEggIGBgDJPyFb')
+        setToken('007eJxTYDh+riUiXUQmuSzy+PzVhUeDIuJ3Vr2QlZj34I3Df+nM0ycVGFKTUkyTLc2MzC2TU0xMkw0tUixNLFLNLQwTzQ0MjFNS0mpnpzUEMjIwl2xnYWSAQBCfnSE5I7EksaCAgQEA9CIhUw==')
         setCalling(true)
     }
   
