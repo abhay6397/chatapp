@@ -16,6 +16,7 @@ const ChatBox = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault()
+   if(msg.trim()){
     try {
       await addDoc(collection(db, 'Messages'), {
         text: msg,
@@ -27,6 +28,7 @@ const ChatBox = () => {
       console.log(error)
     }
     setMsg('')
+   }
   }
 
   useEffect(() => {
@@ -67,7 +69,7 @@ const ChatBox = () => {
           ))}
         </ul>
         <form className='text-white my-4 pb-4 flex items-center' onSubmit={(e) => handleSubmit(e)}>
-          <input className='text-slate-700 w-80 h-8 rounded-full px-3 shadow-lg
+          <input className='text-slate-700 w-80 h-10 rounded-full px-3 shadow-lg
     outline-none' type="text" value={msg} onChange={(e) => setMsg(e.target.value)} placeholder='Type a message' />
           <button
             className='ml-2 py-1 px-2 rounded-full shadow-xl hover:scale-105 transition ease-in bg-[#00A562]'
